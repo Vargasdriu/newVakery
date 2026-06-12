@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 500px 300px 500px;
+            grid-template-areas: 
+            "1"
+            "2"
+            "3";
+            gap:10px;
+        }
+        header{
+            grid-area: 1;
+            background-color: green;
+        }
+        section{
+            grid-area: 2;
+            background-color: yellow;
+        }
+        footer{
+            grid-area: 3;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        1
+    </header>
+    <section>
+        <center>inicar sesion</center>
+    </section>
+    <footer>
+        datos
+    </footer>
+    
+</body>
+</html>

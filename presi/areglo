@@ -1,0 +1,20 @@
+-- Tabla pedidos corregida (con campos obligatorios del primer script)
+CREATE TABLE IF NOT EXISTS `vakerysss`.`pedidos` (
+  `id` INT(45) NOT NULL AUTO_INCREMENT, -- Se añade AUTO_INCREMENT del primer script
+  `Nombre` VARCHAR(200) NOT NULL,       -- Vuelve a ser NOT NULL
+  `Fecha` DATE NOT NULL,                -- Vuelve a ser NOT NULL
+  `Estado` VARCHAR(45) NOT NULL,            -- Vuelve a ser NOT NULL
+  `NombreVendedor` VARCHAR(200) NOT NULL,   -- Vuelve a ser NOT NULL
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+-- Tabla productos corregida (con el tipo de dato exacto del primer script)
+CREATE TABLE IF NOT EXISTS `vakerysss`.`productos` (
+  `Codigo` VARCHAR(45) NOT NULL,
+  `NombreProducto` VARCHAR(45) NULL,
+  `PrecioProducto` INT(11) NULL,        -- Se mantiene INT(11) para coincidir
+  `DetalleProducto` VARCHAR(100) NULL,
+  `Stock` INT(11) NULL,                 -- Se mantiene INT(11)
+  `CostoProducto` INT(11) NULL,         -- Se mantiene INT(11)
+  PRIMARY KEY (`Codigo`))
+ENGINE = InnoDB;

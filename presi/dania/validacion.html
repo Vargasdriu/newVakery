@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        border: 5px solid black;
+        color: red;
+        padding: 100px;
+        
+    }
+</style>
+<body>
+    <form action="" onsubmit="return validar()">
+    <label> Nombre:</label>
+    <input type="text" id="nombre"><br>
+    <label>Apellido:</label>
+    <input type="text" id="apellido"><br>
+    <input type="submit">
+
+    </form>
+    <a>hola</a>
+    <script>
+        function validar(){
+            var a=document.getElementById("nombre");
+            var b=document.getElementById("apellido");
+            if(a.value==""){
+                alert("campo vacio");
+                return false;
+
+            }if(b.value==""){
+                alert("campo vacio");
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>    
+</body>
+</html>

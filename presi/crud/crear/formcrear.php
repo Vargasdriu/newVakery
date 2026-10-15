@@ -11,9 +11,9 @@
 <label for="nombre">Nombre:</label>
 <input type="text" id="nombre" name="nombre" required>
 <label for="precio">Precio:</label>
-<input type="number" id="precio" name="precio" step="0.01" min="0" required>
+<input type="number" id="precio" name="precio"  required>
 <label for="cantidad">Cantidad:</label>
-<input type="number" id="cantidad" name="cantidad" min="0" required>
+<input type="number" id="cantidad" name="cantidad"  required>
 <input type="submit" value="Registrar">
 </form> 
 </body>
